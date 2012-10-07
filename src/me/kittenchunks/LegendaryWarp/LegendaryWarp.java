@@ -52,7 +52,7 @@ public class LegendaryWarp extends JavaPlugin
       this.worker.warpRemove(sender, args[0]);
       return true;
     }
-    if (cmd.equalsIgnoreCase("warpadd")) {
+    if (cmd.equalsIgnoreCase("setwarp")) {
       this.worker.warpAdd(sender, args[0]);
       return true;
     }
