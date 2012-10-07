@@ -1,0 +1,32 @@
+name: LegendaryWarp
+main: me.kittenchunks.LegendaryWarp.LegendaryWarp
+version: 3.4
+author: Plague
+description: >
+             Plugin implementing warping (teleporting) to defined locations.
+             Uses plaintext warps.txt compatible with hMod and SimpleWarp.
+commands:
+  warplist:
+    description: Lists all defined warp location names.
+    aliases: [warplist,listwarps]
+    usage: /<command>
+  warpto:
+    description: Warps the player to a defined location.
+    aliases: warp
+    usage: /<command> <warpname> [player]
+  warpadd:
+    description: Adds a location definition to warps.txt.
+    aliases: setwarp
+    usage: /<command> <warpname> 
+  warpremove:
+    decription: Removes a defined warp location from warps.txt.
+    aliases: removewarp
+    usage: /<command> <warpname>
+  worldlist:
+    description: Lists all worlds on the server.
+    aliases: [worldlist,listworlds]
+    usage: /<command>
+  world:
+    description: Warps the player to given world.
+    aliases: world
+    usage: /<command> <worldname> [player]
