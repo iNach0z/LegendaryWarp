@@ -30,7 +30,7 @@ public class LegendaryWarp extends JavaPlugin
     PluginDescriptionFile pdfFile = getDescription();
     System.out.println(pdfFile.getName() + " version " + pdfFile.getVersion() + " stopping...");
   }
-
+//start commands
   public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args)
   {
     String cmd = command.getName();
@@ -38,7 +38,7 @@ public class LegendaryWarp extends JavaPlugin
       this.worker.warpList(sender);
       return true;
     }
-    if (cmd.equalsIgnoreCase("worldlist")) {
+    if (cmd.equalsIgnoreCase("worldlist")) { //start world commands
       this.worker.worldList(sender);
       return true;
     }
@@ -49,7 +49,7 @@ public class LegendaryWarp extends JavaPlugin
       return true;
     }
     if (cmd.equalsIgnoreCase("warpremove")) {
-      this.worker.warpRemove(sender, args[0]);
+      this.worker.warpRemove(sender, args[0]); //need to fix this 
       return true;
     }
     if (cmd.equalsIgnoreCase("setwarp")) {
@@ -57,7 +57,7 @@ public class LegendaryWarp extends JavaPlugin
       return true;
     }
     if (cmd.equalsIgnoreCase("world")) {
-      this.worker.worldTo(sender, args[0], args.length > 1 ? args[1] : null);
+      this.worker.worldTo(sender, args[0], args.length > 1 ? args[1] : null); //tp to a world, still buggy
       return true;
     }
     return false;
